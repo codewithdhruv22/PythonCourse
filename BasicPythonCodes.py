@@ -191,3 +191,275 @@ Write a program which can write you an application for leave, make variables of 
 
 
 
+
+#CHAPTER 04 - Input
+
+name = input("Enter your name : ")
+print(f"My name is {name}")
+
+
+#Quick Excercise -
+"""
+Write a function to print introduction of a person
+Python Intro Maker
+"""
+
+
+
+
+
+# Chapter 07 - Typecasting
+
+
+num1  = int(input())
+num2 = int(input())
+add = num1 + num2
+print(f"Addition of these two numbers is {add}")
+
+
+#Quick Excercise  -
+"""
+Make A Calculator which can add two decimal number and then multiply it with an integer.
+
+num1 -- Float
+num2 -- Float
+num3 -- Integer
+
+num1+num2
+res*num3
+finalRes -- Integer
+"""
+
+
+
+
+#Chapter 08 - Lists
+
+
+
+#Saman
+# Multiple item(data - str,int,float) ek single variable me store kr sakte hai
+
+
+car_cmp_list = ["BMW" , "Audi", "Maruti", "Land Rover" , "BMW"]
+print(car_cmp_list)
+roll_num_list = [301, 304, 206 , 113]
+# print(roll_num_list)
+rain_forcasting_list = [True, False, True, True, False]
+# print(rain_forcasting_list)
+
+mix_list = ["BMW" , 12.99 , True]
+# print(mix_list)
+
+cmp_name = roll_num_list[-1]
+print(cmp_name)
+
+
+# sub_list = ["Rohan" , "Ashutosh" , "Sakshi"]
+# sub_list_length = len(sub_list)
+# print(sub_list_length)
+
+
+#Quick Excercise -
+# Make a program in which all the names of Indians States Will be stored in a list. Then accroding to the user input print the State Name of the respective input index
+#
+# print a warning => How many items are there in list
+# list = [afaa,af,af,a,fa]
+# input() = >3 (number)
+# print()
+
+
+
+
+
+#Chapter 9 - List Methods 
+
+
+
+car_cmp = ["BMW" , "AUDI" ,"Maruti" , "BMW"  ,"AUDI" , "audi" , "bmw"]
+# list.func_name(data)
+# print(car_cmp)
+
+#Ek element add kro programmatically
+# car_cmp.append("Hyundai")
+
+# print(car_cmp)
+
+#Puri list ko empty
+# car_cmp.clear()
+
+# print(car_cmp)
+
+#ek duplicate list bnao
+# car_cmp1 = car_cmp.copy()
+# print(car_cmp)
+
+
+
+stock_avail = [23 , 1212 , 12.33, 55.99, 23.001]
+#Ye btao ki car_cmp me
+bmw_car_count = stock_avail.count("bmw")
+# print(bmw_car_count)
+
+#find the index of maruti
+# print(stock_avail.index("audi"))
+
+# print(stock_avail)
+#2nd index par tata ki gadi lga do
+# stock_avail.insert(2,"tata") #=> ['bmw', 'BMW', 'tata', 'bmw', 'audi', 'maruti', 'audi', 'tata', 'tata', 'audi']
+# stock_avail.insert(4,"tata")
+# print(stock_avail)
+
+
+#list me se 4th index wala element remove kr do
+# print(stock_avail)
+# stock_avail.pop(4)
+# print(stock_avail)
+
+#audi ki pehli gadi ko delete kr do
+# print(stock_avail)
+# stock_avail.remove("audi")
+# print(stock_avail)
+
+#list ke order ko reverse
+# stock_avail.reverse()
+# print(stock_avail)
+
+#stock_avail sort
+stock_avail.sort()
+print(stock_avail)
+
+
+
+
+
+#Chapter 10 - Dictionaries
+
+
+#Normal - Word  = Meaning
+#Python - Key = Value
+
+#Creating dictionaries
+myDict  = {"key1" : "value1" ,
+           "key2" : "value2",
+           "key3" : {"key31" : "value31" , "key32" : "value32"},
+           12 : "value4",
+
+           23.44 : 34}
+
+print((myDict["key3"])["key32"])
+
+print(len(myDict))
+#Quick Excercise -
+"""
+Create a dictionary in which you will store the information of your family members by using nested Dictionaries.
+Then take a input of the family member name and show the information of them.
+
+"""
+
+
+
+
+
+#Chapter 11 - Set Python
+
+
+
+
+# Set - List - Unique - Unordered - Unchangable/immutable
+car_cmp  = ["BMW" , "TATA" , "BMW" ,"KIA"]
+car_cmp[0] = "TATA"
+print(car_cmp)
+
+car_cmp_set = {"BMW" , "TATA" ,"BMW", "KIA"}
+car_cmp_set2 = {"BMW" , "TATA" , "MARUTI" }
+print(car_cmp_set.intersection(car_cmp_set2))
+car_cmp_set.add("HYUNDAI")
+print(car_cmp_set)
+
+
+
+
+
+#Chapter 12 - Tuple In Python
+
+
+
+
+# List - [] - Duplicates Allowed , Ordered , Changable/mutable
+# Set - {} - Duplicates Not Allowed , Unordered , Unchangable/immuabtle
+#Tuple - () - Duplicates Allowed , Ordered  , Unchangable/immuabtle
+
+
+car_cmp = ("TATA" , "TATA" , "ROLLS ROYCE" , "FERRARI", "KIA")
+print(len(car_cmp))
+print(car_cmp.index("KIA"))
+print(car_cmp)
+
+
+
+
+#Chapter 13 - If Else In Python
+
+
+
+
+liked = False
+
+if liked:
+    print("Rs.100 Transfer To Viewer")
+elif 4==5:
+    print("I SHOULD BE RUN1")
+elif False:
+    print("I SHOULD BE RUN2")
+elif False:
+    print("I SHOULD BE RUN3")
+else:
+    print("Rs. 100 Deducted from Viewer Account")
+
+
+
+
+
+
+#Chapter 14 - Inline If-Else
+
+marks = 40
+#Value if Condition else Value
+
+mar_padegi = True if marks<50 else False
+
+age  = int(input("Enter your age: "))
+message = 'you are not eligible to apply' if age<16 else 'have to wait to be turned 18+' if 16<age<=18 else 'you are eligible to apply'
+print(message)
+
+
+
+#Chapter 15  - For Loop 
+# print("Hello World!")
+#Looping Statement
+
+car_cmp = ["BMW", "TATA", "KIA", "AUDI"]
+for i in range(10):
+    print(i)
+    for j in range(10):
+        print(j)
+
+#Quick Excercise -
+# 1
+# 2
+# 4
+# 8
+# 2
+# 16
+# 32
+# 64
+# 3
+# ...
+
+#Max Value  = Comment
+
+
+
+
+
